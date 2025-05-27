@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block content %}
+<div class="row">
+  <div class="col-md-4">
+    <img
+      src="{{ url_for('static', filename=movie.image_path) }}"
+      alt="{{ movie.title }}"
+      style="
+        width: 265px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+      "
+    />
+  </div>
+  <div class="col-md-8">
+    <h2>{{ movie.title }}</h2>
+    <p><strong>Mô tả:</strong> {{ movie.description or 'Không có mô tả' }}</p>
+    <p>
+      <strong>Đánh giá:</strong>
+      <span class="detail-rating">
+        {% if movie.rating > 0 and movie.rating <= 5 %} {% for i in
+        range(movie.rating) %}
+        <i class="bi bi-star-fill" style="color: #ffc107"></i>
+        {% endfor %} {% for i in range(5 - movie.rating) %}
+        <i class="bi bi-star" style="color: #ffc107" N></i>
+        {% endfor %} {% else %} Chưa có đánh giá {% endif %}
+      </span>
+    </p>
+    <p>
+      <strong>Link phim:</strong>
+      <a href="{{ movie.movie_url }}" target="_blank">{{ movie.movie_url }}</a>
+    </p>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Quay lại</a>
+    <a href="{{ url_for('edit_movie', id=movie.id) }}" class="btn btn-warning"
+      >Sửa</a
+    >
+    <a
+      href="{{ url_for('delete_movie', id=movie.id) }}"
+      class="btn btn-danger"
+      onclick="return confirm('Bạn có chắc muốn xóa phim này?')"
+      >Xóa</a
+    >
+  </div>
+</div>
+{% endblock %}

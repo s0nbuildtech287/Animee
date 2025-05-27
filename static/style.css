@@ -1,0 +1,159 @@
+body {
+  background-color: #263238; /* Nền xanh đen huyền bí */
+  color: #ffffff; /* Màu chữ sáng để tương phản */
+}
+
+.brand-text {
+  font-weight: bold;
+  font-family: "Segoe UI", "Arial", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #e9e9e9; /* Tím nhạt cho logo */
+  text-shadow: 1px 1px 4px #000000; /* Bóng tối cho logo */
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar {
+  background-color: #5f5d5d; /* Tông đen tím cho navbar, sáng hơn body */
+}
+
+.navbar-nav .nav-link {
+  color: #c9c6ce; /* Tím nhạt cho chữ nav */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c9c6ce; /* Tím rất nhạt khi hover */
+}
+
+.movie-card {
+  width: 200px; /* Kích thước card */
+  transition: transform 0.2s;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: #0d2936; /* Nền card tối */
+  border: 1px solid #455a64; /* Viền nhẹ */
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.star-rating {
+  color: #ffc107; /* Màu vàng cho sao */
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-link {
+  background-color: #2e3b42;
+  color: #e0e0e0;
+  border: 1px solid #455a64;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #595f63;
+  border-color: #929698;
+}
+
+.pagination .page-link:hover {
+  background-color: #455a64;
+  color: #ffffff;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 300px; /* Tỷ lệ 2:3 cho poster phim */
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 12px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #ffffff; /* Chữ trắng cho tiêu đề */
+}
+
+.card-text {
+  display: none; /* Ẩn mô tả trên card */
+}
+
+.btn-sm {
+  font-size: 13px;
+  padding: 6px 10px;
+  margin: 0 4px;
+}
+
+.btn-primary {
+  background-color: #0288d1; /* Xanh dương đậm cho nút Xem phim */
+}
+
+.btn-primary:hover {
+  background-color: #01579b;
+}
+
+.btn-info {
+  background-color: #26a69a; /* Xanh lam nhạt cho nút Chi tiết */
+}
+
+.btn-info:hover {
+  background-color: #1b746b;
+}
+
+.btn-success,
+.btn-warning,
+.btn-danger,
+.btn-secondary {
+  color: #ffffff; /* Chữ nút sáng */
+}
+
+.detail-rating .bi-star-fill {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.detail-rating .bi-star {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #455a64; /* Sao rỗng tối */
+}
+
+/* Chữ trong trang chi tiết */
+.detail-movie h2,
+.detail-movie p {
+  color: #e0e0e0;
+}
+.navbar-nav {
+  width: 70%;
+  justify-content: space-between;
+}
+
+.navbar-nav .nav-item {
+  flex: 1 1 0;
+  text-align: center;
+  border-left: 2px solid #beb7b7; /* Viền trái màu đen */
+}
+
+.navbar-nav .nav-item:first-child {
+  border-left: none; /* Không viền trái cho mục đầu */
+}
