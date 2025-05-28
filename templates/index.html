@@ -2,8 +2,8 @@
 <!-- Nút thêm phim mới -->
 <div class="text-end mb-4">
   <a href="{{ url_for('add_movie') }}" class="btn btn-secondary">
-    Thêm phim mới</a
-  >
+    Thêm phim mới
+  </a>
 </div>
 
 <div class="row">
@@ -11,7 +11,7 @@
   <div class="col-6 col-md-2 mb-4">
     <div class="card movie-card">
       <img
-        src="{{ url_for('static', filename=movie.image_path) }}"
+        src="{{ movie.image_path }}"
         class="card-img-top"
         alt="{{ movie.title }}"
       />
