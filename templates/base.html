@@ -3,15 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animexs.com</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <title>animexs.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="../static/uploads/background.jpg" />
     <link rel="stylesheet" href="../static/style.css" />
   </head>
@@ -19,29 +13,13 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="{{ url_for('index') }}">
-          <img
-            src="{{ url_for('static', filename='uploads/logo.png') }}"
-            alt="AnimeXS Logo"
-            id="logo"
-            style="
-              width: 40px;
-              height: 40px;
-              border-radius: 20px;
-              margin-left: 20px;
-              margin-bottom: 15px;
-            "
-          />
+          <img src="{{ url_for('static', filename='uploads/logo.png') }}" alt="AnimeXS Logo" id="logo" style="width: 40px; height: 40px; border-radius: 20px; margin-left: 20px; margin-bottom: 15px" />
           <span class="brand-text">AnimeXS</span>
         </a>
         <div class="collapse navbar-collapse justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="{{ url_for('index') }}"
-                style="font-weight: 1000"
-                >Trang chủ</a
-              >
+              <a class="nav-link" href="{{ url_for('index') }}" style="font-weight: 1000">Trang chủ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Thể loại</a>
@@ -65,14 +43,7 @@
             <img
               src="{{ url_for('static', filename='uploads/xs.jpg') }}"
               alt="User Avatar"
-              style="
-                width: 32px;
-                height: 32px;
-                border-radius: 20px;
-                object-fit: cover;
-                border: 2px solid #ccc;
-                margin-right: 20px;
-              "
+              style="width: 32px; height: 32px; border-radius: 20px; object-fit: cover; border: 2px solid #ccc; margin-right: 20px"
             />
           </a>
         </div>
